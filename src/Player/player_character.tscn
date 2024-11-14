@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://c15674gej853d"]
+
+[ext_resource type="Script" path="res://src/Player/Movement.gd" id="1_yorwr"]
+[ext_resource type="Script" path="res://src/Player/Input/DirectionInput.gd" id="2_nq84j"]
+[ext_resource type="Script" path="res://src/Player/Listener.gd" id="3_4wirl"]
+[ext_resource type="BitMap" uid="uid://dt47spd0m6uyl" path="res://src/Level/new_bit_map.tres" id="4_37cq7"]
+
+[node name="PlayerCharacter" type="Node2D"]
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+script = ExtResource("1_yorwr")
+
+[node name="Direction" type="Node" parent="."]
+script = ExtResource("2_nq84j")
+
+[node name="Listener" type="Node2D" parent="."]
+script = ExtResource("3_4wirl")
+next = ExtResource("4_37cq7")

@@ -1,0 +1,8 @@
+[gd_resource type="BitMap" format=3 uid="uid://dt47spd0m6uyl"]
+
+[resource]
+resource_local_to_scene = true
+data = {
+"data": PackedByteArray(0, 0),
+"size": Vector2i(3, 3)
+}
